@@ -10,7 +10,85 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@700&display=swap');
 
+ul li{
+  list-style: none;
+  font-size: normal
+}
 
+a{
+  text-decoration: none;
+}
+
+.logo-image{
+  width:300px;
+}
+.navbar-wrapper{
+  background-color: #fcf4ee;
+  background:url(brand/banner-bg.jpg);
+  width: 100%;
+  min-height: 580px;
+  background-position: center;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 7px 30px -6px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+.own-style-ul .own-style-li>a{
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/******    banner start Here ********************/
+.banner-wrapper{
+  padding:50px 0px 50px 0px;
+
+}
+.banner-img img{
+  width:100%;
+}
+.banner-content-box{
+  margin: 80px 0px 0px 100px;
+}
+.banner-content-box 
+.banner-conent>h2{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+
+}
+.banner-conent .banner-title{
+  color:#ff9100;
+}
+.banner-conent>p{
+  word-spacing: 6px;
+  text-transform: capitalize;
+  padding:20px 0px 20px 0px;
+}
+
+
+/********************brand section css start this line ************/
+.barnd-wrapper{
+  /* border: 2px solid #000; */
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  padding:10px;
+}
+.brand-img-box img{
+  width:100%;
+}
+.brand-content h4{
+  text-align: center;
+  padding-top: 50px;
+  text-transform: uppercase;
+  bottom: 0;
+  position: relative;
+}
+
+/*******************888 product section css start here  ********/
 .products{
   background-color: rgb(252, 252, 252);
   padding:20px 0px 20px 0px;
@@ -54,12 +132,10 @@ body{
   height: 98%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
 }
 .product-wrapper:hover{
   box-shadow: none;
 }
-
 .product-wrapper .product-img-box {
   background-color: rgba(241, 241, 241, 0.938);
   border-radius: 10px;
@@ -83,7 +159,6 @@ body{
   font-family: sans-serif;
   color:rgba(0, 0, 0, 0.740);
 }
-
 .price-title{
   color: #008cff;
   font-family: sans-serif;
@@ -95,7 +170,7 @@ body{
   font-weight: 500;
 }
 
-
+/******************sxchange and seller section start here******/
 .own-style-class{
   padding:100px 0px 50px 0px;
 }
@@ -105,6 +180,10 @@ body{
 }
 .icon-box{
   display:flex;
+  box-shadow: -5px 13px 31px -22px rgba(182,182,182,0.75);
+-webkit-box-shadow: -5px 13px 31px -22px rgba(182,182,182,0.75);
+-moz-box-shadow: -5px 13px 31px -22px rgba(182,182,182,0.75);
+ padding:5px 0px 5px 0px; 
 }
 .exchange-content h3{
   text-transform: capitalize;
@@ -120,6 +199,9 @@ body{
   width:60px;
   margin-right: 30px;
 }
+
+/***********************some media query for some classes start here********/
+
 @media (min-width: 320px) and (max-width: 767px) {
   .icon-box{
     width:300px;
@@ -127,14 +209,120 @@ body{
     margin: 30px auto;
     text-align: center;
   }
+  .exchange-img-box img{
+    margin: 20px 0px 20px 0px;
+  }
   
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .exchange-box-wrapper{
     margin-top: 50px;
   }
-  
+  .icon-box{
+    margin-top: 30px;
+  }
+  .exchange-content{
+    padding:0px 20px 0px 20px;
+  }
+  .banner-content-box{
+    margin: 50px 0px 0px 50px;
+  }
+      .banner-content-box 
+    .banner-conent>h2{
+      font-size: 30px;
+      line-height: 50px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 577px){
+  .banner-content-box 
+  .banner-conent>h2{
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .banner-content-box{
+    margin: 50px 0px 0px 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1900px) {
+  .icon-box{
+    margin-top: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 476px) {
+  .footer-wrapper
+ .footer-content{
+   text-align: center;
+}
+.logo-image{
+  width:200px;
+}
+
+}
+/*********************media query end*************/
+
+
+/****--------------footer start here---------************/
+
+.social-icon{
+  background-color: #fff;
+  display:block;
+  width:80%;
+  padding:5px 20px;
+  font-size: 18px;
+  margin-left: 3px;
+  text-align: center;
+  color: #fff;
+}
+.icon1{
+  background-color: #1775EF;
+}
+.icon2{
+  background-color: #1FA4F3;
+}
+.icon3{
+  background-color: #F75047;
 }
 
 
+.footer-wrapper
+ .footer-content>a>img{
+  width:50%;
+  margin-left: 20px;
+}
+.footer-content>h3{
+  padding:0px 0px 0px 25px;  
+  margin: 30px 0px 20px 0px;
+}
+.footer{
+  color:rgb(177, 177, 177);
+  position: relative;
+  z-index: 99;
+  
+}
+.footer::before{
+  position: absolute;
+  content: '';
+  top:0%;
+  left: 0;
+  background-color: rgb(0, 162, 255);
+  width: 30%;
+  height: 5px;
 
+}
+.footer::after{
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 70%;
+  width: 30%;
+  height:100%;
+  border-top: 5px solid rgb(0, 162, 255); 
+  border-right: 5px solid rgb(0, 162, 255); 
+  z-index: -10;
+}
+.footer-bg{
+  background-color: #333E4F;
+  padding:100px 0px 100px 0px;
+}

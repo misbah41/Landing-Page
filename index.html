@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -13,12 +14,111 @@
 </head>
 <body>
   <!-------------------Header Start to Here------------------------>
-  <header>
-
+  <header class="header navbar-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo-image" src="Logo, Icon/Logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class=" own-style-ul navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item  own-style-li  own-style-li">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item  own-style-li">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item  own-style-li">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item  own-style-li">
+              <a class="nav-link" href="#products2">Shop</a>
+            </li>
+            <li class="nav-item  own-style-li">
+              <a class="nav-link" href="#products">Product</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner-wrapper ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="banner-img">
+              <img src="brand/men2.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="banner-content-box">
+              <div class="banner-conent">
+                <h2><span class="banner-title"> NIKE REACT</span><br/> INFINITY RUN 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse praesentium ab dolorum?</p>
+                <button class="btn btn-primary all-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-  <!--------------product section Start To Here with Main Tag------->
+   <!--------------product section Start To Here with Main Tag------->
   <main>
-    <section class="products  mb-5">
+    <section class="products pt-5">
+      <div class="container bg-container">
+        <div class="product-title">
+          <h2>Shop By Brand</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-5 col-lg-3 mt-5">
+            <div class="barnd-wrapper">
+              <a class=" brand-img-box brand-img-box1" href="#">
+                <img src="brand/brand1.png" alt="">
+              </a>
+              <div class="brand-content">
+                <h4>Epex Sport</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-5 col-lg-3 mt-5">
+            <div class="barnd-wrapper">
+              <a class="brand-img-box brand-img-box2" href="#">
+                <img  src="brand/brand6.png" alt="">
+              </a>
+              <div class="brand-content">
+                <h4>r e e b o o k</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-5 col-lg-3 mt-5">
+            <div class="barnd-wrapper">
+              <a class="brand-img-box brand-img-box3" href="#">
+                <img  src="brand/brand1.png" alt="">
+              </a>
+              <div class=" brand-content">
+                <h4>Epex Sport</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-5 col-lg-3 mt-5">
+            <div class="barnd-wrapper">
+              <a class="brand-img-box brand-img-box4" href="#">
+                <img src="brand/brand4.png" alt="">
+              </a>
+              <div class="brand-content">
+                <h4>F I L A</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--------------product section Start To Here ------->
+    <section id="products" class="products  mb-5">
       <div class="container bg-container">
         <div class="product-title">
           <h2>CASUAL SHOES</h2>
@@ -35,7 +135,7 @@
                   printing and typesetting industry.</p>
               </div>
               <div class="d-flex justify-content-between">
-                <h2 class="price-title">$234</h2>
+                <h2 class="price-title">$301</h2>
                 <button class="btn btn-primary all-btn">Buy Now</button>
               </div>
             </div>
@@ -51,7 +151,7 @@
                   printing and typesetting industry.</p>
               </div>
               <div class="d-flex justify-content-around">
-                <h2 class="price-title">$234</h2>
+                <h2 class="price-title">$434</h2>
                 <button class="btn btn-primary all-btn">Buy Now</button>
               </div>
             </div>
@@ -67,7 +167,7 @@
                   printing and typesetting industry.</p>
               </div>
               <div class="d-flex justify-content-around">
-                <h2 class="price-title">$234</h2>
+                <h2 class="price-title">$254</h2>
                 <button class="btn btn-primary all-btn">Buy Now</button>
               </div>
             </div>
@@ -75,8 +175,8 @@
         </div>
       </div>
     </section>
-    <!---------------------product section tow start here------------------------->
-    <section class="products mt-5 mb-5">
+    <!---------------------product section two start here------------------------->
+    <section id="products2" class="products mt-5 mb-5">
       <div class="container bg-container">
         <div class="row">
           <div class="product-title">
@@ -95,7 +195,7 @@
                   printing and typesetting industry.</p>
               </div>
               <div class="d-flex justify-content-between">
-                <h2 class="price-title">$234</h2>
+                <h2 class="price-title">$250</h2>
                 <button class="btn btn-primary all-btn">Buy Now</button>
               </div>
             </div>
@@ -111,7 +211,7 @@
                   printing and typesetting industry.</p>
               </div>
               <div class="d-flex justify-content-around">
-                <h2 class="price-title">$234</h2>
+                <h2 class="price-title">$333</h2>
                 <button class="btn btn-primary all-btn">Buy Now</button>
               </div>
             </div>
@@ -127,7 +227,7 @@
                   printing and typesetting industry.</p>
               </div>
               <div class="d-flex justify-content-around">
-                <h2 class="price-title">$234</h2>
+                <h2 class="price-title">$1104</h2>
                 <button class="btn btn-primary all-btn">Buy Now</button>
               </div>
             </div>
@@ -137,7 +237,7 @@
     </section>
 
     <!-------------- seller and exchange section start here--------->
-    <section class="products own-style-class">
+    <section class="products own-style-class mb-5">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-7 ">
@@ -182,13 +282,64 @@
         </div>
       </div>
     </section>
-  </main>
+  </main>  
 
   <!---------------footer part start to here----------------------->
-  <footer>
-
-
+  <footer id="contact" class="footer footer-bg">
+    <div class="container">
+      <div class="row justify-content-center text-center m-2">
+        <div class="col-sm-8">
+          <h3>GET IN TOUCH</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-2 mt-2">
+        <div class="col-sm-8 ">
+          <div class="d-flex justify-content-around">
+            <a class="social-icon icon1" href="#"><span ><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+            <a class="social-icon icon2" href="#"><span ><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+            <a class="social-icon icon3" href="#"><span ><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-4">
+          <div class="footer-wrapper">
+            <div class="footer-content">
+              <h3>DOWNLOAD</h3>
+              <a href="#"><img src="brand/appgplay.png" alt=""> </a>             
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="footer-wrapper">
+            <div class="footer-content">
+              <h3>CONTACT US</h3>
+              <ul>
+                <li>House #5, Road # 14,<br/>
+                  Gulshan, Dhaka-1212.</li>
+                <li>Email: support@penguin.com.bd</li>
+                <li>Contact no: 0963341187</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="footer-wrapper">
+            <div class="footer-content">
+              <h3>MENU</h3>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Purchasing Policy</a></li>
+                <li><a href="#">Terms And Condition</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>

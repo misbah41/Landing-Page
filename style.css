@@ -169,6 +169,9 @@ a{
   font-size: 18px;
   font-weight: 500;
 }
+.cart-icon{
+  padding-right: 8px;
+}
 
 /******************sxchange and seller section start here******/
 .own-style-class{
@@ -250,13 +253,16 @@ a{
     margin-top: 30px;
   }
 }
-@media (min-width: 320px) and (max-width: 476px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .footer-wrapper
  .footer-content{
    text-align: center;
 }
 .logo-image{
   width:200px;
+}
+.product-title>h2{
+  font-size: 30px;
 }
 
 }
@@ -304,11 +310,13 @@ a{
 .footer::before{
   position: absolute;
   content: '';
-  top:0%;
-  left: 0;
-  background-color: rgb(0, 162, 255);
+  top: 0%;
+  left: 0%;
   width: 30%;
-  height: 5px;
+  height:100%;
+  border-top: 5px solid rgb(0, 162, 255); 
+  border-left: 5px solid rgb(0, 162, 255); 
+  z-index: -10;
 
 }
 .footer::after{
